@@ -2,22 +2,35 @@ using System.Collections;
 using System.Collections.Generic;
 using System.Drawing;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class ImageSizeScript : MonoBehaviour
 {
-    GameObject image;
-    public void OnImage()
+    public GameObject Image;
+    public GameObject SizeSlider;
+    public GameObject HeightSlider;
+
+    float sizeX;
+    float sizeY;
+    float sizeZ;
+
+    private void Start()
     {
-        float size = 1.0f;
-        for (int i = 0; i < 10; i++)
-        {
-            size = size + 0.1f;
-            image.transform.localScale = new Vector2(1F * size, 1F * size);
-        }
+        sizeX = Image.GetComponent<Transform>().localScale.x;
+        sizeY = Image.GetComponent<Transform>().localScale.y;
+        sizeZ = Image.GetComponent<Transform>().localScale.z;
     }
-    public void OfImage()
+    public void changeWidth()
     {
-        image.transform.localScale = new Vector2(1F * 1, 1F * 1);
+        HeightSlider.GetComponent<Slider>().value = 1;
+        float size = SizeSlider.GetComponent<Slider>().value;
+        Image.transform.localScale = new Vector3(sizeX * size, sizeY,sizeZ);
+    }
+    public void changeHeight()
+    {
+        SizeSlider.GetComponent<Slider>().value = 1;
+        float size = HeightSlider.GetComponent<Slider>().value;
+        Image.transform.localScale = new Vector3(sizeX , sizeY*size, sizeZ);
     }
 
 }
