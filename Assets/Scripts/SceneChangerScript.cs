@@ -17,4 +17,8 @@ public class SceneChangerScript : MonoBehaviour
     {
         SceneManager.LoadScene("Loadout_Sniper", LoadSceneMode.Single);
     }
+    public void ToStartingScreen()
+    {
+        SceneManager.LoadScene("StartingScreen", LoadSceneMode.Single);
+    }
 }
