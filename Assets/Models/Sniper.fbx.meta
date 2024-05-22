@@ -1,9 +1,34 @@
 fileFormatVersion: 2
-guid: 35929fbe5acc9e242b25379a184bd154
+guid: 4632fef79473e054e83b0f58d46bb23f
 ModelImporter:
   serializedVersion: 22200
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Base
+    second: {fileID: 2100000, guid: 0c7b3c40c5164a046a09de5923da5803, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Body
+    second: {fileID: 2100000, guid: cc86e34e1c2228249bca63665aac381c, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Eyes
+    second: {fileID: 2100000, guid: d7b02522a7c9cbe488efb957b9f456ba, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Head
+    second: {fileID: 2100000, guid: f68db8c1aa098e94c825e23645766923, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Lenses
+    second: {fileID: 2100000, guid: ccfd4494643266a408bef4337ce325b3, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0

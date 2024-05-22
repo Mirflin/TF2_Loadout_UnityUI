@@ -11,4 +11,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Loadout.unity
     guid: e989c1af93d87bc4caee1823be8d093c
+  - enabled: 1
+    path: Assets/Scenes/Loadout_Sniper.unity
+    guid: 0f433939482c02e43a8cee21c408a484
   m_configObjects: {}

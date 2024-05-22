@@ -9,4 +9,12 @@ public class SceneChangerScript : MonoBehaviour
     {
         SceneManager.LoadScene("ChooseLoadoutCharacter", LoadSceneMode.Single);
     }
+    public void ToDemomanLoadout()
+    {
+        SceneManager.LoadScene("Loadout", LoadSceneMode.Single);
+    }
+    public void ToSniperLoadout()
+    {
+        SceneManager.LoadScene("Loadout_Sniper", LoadSceneMode.Single);
+    }
 }
