@@ -12,25 +12,34 @@ public class PrefabSpawner : MonoBehaviour
     public Sprite jefe;
     public Sprite gibus;
     public Sprite wizzardsHat;
-    private Vector2 position = new Vector2(817,676);
+    public GameObject PrefabSpot;
+    private Vector3 position = new Vector3(0,0,-24);
+    
 
     public void OnButtonClick(Button button)
     {
+        PrefabSpot.SetActive(true);
+        Object[] allObjects = FindObjectsOfType(typeof(GameObject));
+        foreach (GameObject obj in allObjects)
+        {
+            if (obj.transform.name == "SpawnSpot(Clone)")
+            {
+                Destroy(obj);
+            }
+        }
+   
         string name = button.name;
-        Debug.Log(name);
-        Instantiate(imageHolder, position, imageHolder.transform.rotation);
+        GameObject newPrefab = Instantiate(imageHolder, position, imageHolder.transform.rotation) as GameObject;
+        newPrefab.transform.SetParent(GameObject.FindGameObjectWithTag("prefabHat").transform, false);
         if (name == "jefeButton")
         {
-            Debug.Log("JEFE");
             imageHolder.GetComponent<Image>().sprite = jefe;
         }else if (name == "gibbusButton")
         {
-            Debug.Log("GIBBUS");
             imageHolder.GetComponent<Image>().sprite = gibus;
         }
         else
         {
-            Debug.Log("WIZZARD");
             imageHolder.GetComponent<Image>().sprite = wizzardsHat;
         }
     }
