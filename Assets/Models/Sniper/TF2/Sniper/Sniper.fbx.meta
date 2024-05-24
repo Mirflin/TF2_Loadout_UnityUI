@@ -894,7 +894,37 @@ ModelImporter:
   - first:
       137: 13700010
     second: sniper_body
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: c_arrow
+    second: {fileID: 2100000, guid: e4989ae15720f214fb7478ddd055ff9e, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: eyeball_l
+    second: {fileID: 2100000, guid: 1df4704b1b413e74a80206c13515d5d3, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: eyeball_r
+    second: {fileID: 2100000, guid: b2b53a5fc652c7a41ad4f42bf413a3fb, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: sniper
+    second: {fileID: 2100000, guid: 997f539db7ed7334eb89e27ed54c768b, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: sniper_head
+    second: {fileID: 2100000, guid: 138ea5035ef8ec44d84899c8bf848e3f, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: sniper_lens
+    second: {fileID: 2100000, guid: 562dc2b80af9bdd4185c583360597003, type: 2}
   materials:
     materialImportMode: 1
     materialName: 0
