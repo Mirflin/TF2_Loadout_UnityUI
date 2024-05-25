@@ -12,6 +12,9 @@ public class PrefabSpawner : MonoBehaviour
     public Sprite jefe;
     public Sprite gibus;
     public Sprite wizzardsHat;
+    public Sprite Captains;
+    public Sprite Dopper;
+    public Sprite Googles;
     public GameObject PrefabSpot;
     private Vector3 position = new Vector3(0,0,-24);
     
@@ -38,9 +41,21 @@ public class PrefabSpawner : MonoBehaviour
         {
             imageHolder.GetComponent<Image>().sprite = gibus;
         }
-        else
+        else if (name == "halloweenHatButton")
         {
             imageHolder.GetComponent<Image>().sprite = wizzardsHat;
+        }
+        else if (name == "CaptainsButton")
+        {
+            imageHolder.GetComponent<Image>().sprite = Captains;
+        }
+        else if (name == "DopperButton")
+        {
+            imageHolder.GetComponent<Image>().sprite = Dopper;
+        }
+        else
+        {
+            imageHolder.GetComponent<Image>().sprite = Googles;
         }
     }
 

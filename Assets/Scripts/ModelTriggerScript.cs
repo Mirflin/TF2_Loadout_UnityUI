@@ -11,6 +11,9 @@ public class ModelTriggerScript : MonoBehaviour
     public GameObject Jefe1;
     public GameObject Gibus1;
     public GameObject WizzardHat1;
+    public GameObject Dapper;
+    public GameObject Captains;
+    public GameObject Googles;
     public GameObject PrefabSpot;
     private void OnTriggerEnter(Collider other)
     {
@@ -22,18 +25,54 @@ public class ModelTriggerScript : MonoBehaviour
             Gibus1.SetActive(false);
             WizzardHat1.SetActive(false);
             Jefe1.SetActive(true);
+            Googles.SetActive(false);
+            Captains.SetActive(false);
+            Dapper.SetActive(false);
         }
         else if (name.name == "hallowenHatDrag")
         {
             Gibus1.SetActive(false);
             WizzardHat1.SetActive(true);
             Jefe1.SetActive(false);
+            Googles.SetActive(false);
+            Captains.SetActive(false);
+            Dapper.SetActive(false);
         }
-        else
+        else if (name.name == "Gibbus")
         {
             Gibus1.SetActive(true);
             WizzardHat1.SetActive(false);
             Jefe1.SetActive(false);
+            Googles.SetActive(false);
+            Captains.SetActive(false);
+            Dapper.SetActive(false);
+        }
+        else if (name.name == "DapperImage")
+        {
+            Gibus1.SetActive(false);
+            WizzardHat1.SetActive(false);
+            Jefe1.SetActive(false);
+            Googles.SetActive(false);
+            Captains.SetActive(false);
+            Dapper.SetActive(true);
+        }
+        else if (name.name == "Team_Captain")
+        {
+            Gibus1.SetActive(false);
+            WizzardHat1.SetActive(false);
+            Jefe1.SetActive(false);
+            Googles.SetActive(false);
+            Captains.SetActive(true);
+            Dapper.SetActive(false);
+        }
+        else
+        {
+            Gibus1.SetActive(false);
+            WizzardHat1.SetActive(false);
+            Jefe1.SetActive(false);
+            Googles.SetActive(true);
+            Captains.SetActive(false);
+            Dapper.SetActive(false);
         }
         PrefabSpot.SetActive(false);
     }
